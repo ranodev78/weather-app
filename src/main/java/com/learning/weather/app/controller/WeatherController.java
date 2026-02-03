@@ -13,4 +13,9 @@ public class WeatherController {
     public String test() {
         return "Hello world!";
     }
+
+    @GetMapping(value = "", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String app() {
+        return "Weather app!";
+    }
 }
