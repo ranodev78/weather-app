@@ -13,7 +13,7 @@ public class WeatherController {
     private final String location;
 
     @Autowired
-    public WeatherController(@Value("app.location") final String location) {
+    public WeatherController(@Value("${app.location}") final String location) {
         this.location = location;
     }
 
